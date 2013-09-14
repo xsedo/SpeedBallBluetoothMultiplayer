@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">SpeedBall Bluetooth Multiplayer</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="create_game">Create Game</string>
+    <string name="join_game">Join Game</string>
+    <string name="options">Options</string>
+    <string name="rescan">Rescan</string>
+    <string name="scanning">Scanning&#8230;</string>
 
 </resources>
