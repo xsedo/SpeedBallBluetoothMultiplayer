@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+D:\Git\SpeedBallBluetoothMultiplayer\.metadata\.plugins\org.eclipse.jdt.core
-2788339680.index
-1023482685.index

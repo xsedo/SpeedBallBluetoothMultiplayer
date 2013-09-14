@@ -30,7 +30,7 @@ public class MainActivity extends Activity
 			@Override
 			public void onClick(View v) 
 			{
-				//goToActivity(CreateGameActivity.class);
+				goToActivity(CreateGameActivity.class);
 			}
 		});
         joinGameButton.setOnClickListener(new View.OnClickListener() {

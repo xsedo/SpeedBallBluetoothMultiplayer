@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Set;
 
 import ro.game.speedball.receiver.BluetoothReceiver;
+import static ro.game.speedball.SpeedBallApplication.REQUEST_BLUETOOTH_ENABLE;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -21,8 +22,6 @@ import android.widget.ListView;
 
 public class JoinGameActivity extends Activity 
 {
-	private final static int REQUEST_BLUETOOTH_ENABLE = 1;
-	
 	////////////////////////////////////////////////////////////////////////////////////////////////
 	// PRIVATE MEMBERS
 	////////////////////////////////////////////////////////////////////////////////////////////////
@@ -60,7 +59,7 @@ public class JoinGameActivity extends Activity
         {
         	AlertDialog.Builder alert = new AlertDialog.Builder(this);
 
-        	alert.setMessage("Your device have no bluetooth radio");
+        	alert.setMessage("Your device doesn't have bluetooth radio");
         	alert.setTitle("No Bluetooth radio");
         	alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 				@Override
@@ -173,6 +172,7 @@ public class JoinGameActivity extends Activity
 			public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) 
 			{
 				//TODO: connect to device and start game
+				mBluetoothAdapter.cancelDiscovery();
 			}
 		});
 	}
